@@ -1,1 +1,20 @@
-/* Пиши стили тут */
+.star {
+    width: 100px;
+    height: 100px;
+}
+
+.star:hover{
+    background-image: url('img/star.svg');
+}
+
+.star-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.star-container .star:hover ~ .star {
+    background-image: url('img/star.svg');
+}
